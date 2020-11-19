@@ -1,2 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" />
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Внешние ресурсы">
+      <UniqueIdentifier>{54650b15-4b92-4870-8e01-48fbf6ebdc6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовки">
+      <UniqueIdentifier>{bc54a0cd-8703-49ad-b109-6cce18e27646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные">
+      <UniqueIdentifier>{419770fb-5073-42c6-b12b-2093273de9b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Классы">
+      <UniqueIdentifier>{9c5242df-a364-49f6-903d-2d030cd12a33}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Классы</Filter>
+    </ClCompile>
+    <ClCompile Include="Form.cpp">
+      <Filter>Классы</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenu.cpp">
+      <Filter>Классы</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Классы</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Классы</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>Классы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Классы</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Классы</Filter>
+    </ClInclude>
+    <ClInclude Include="Form.hpp">
+      <Filter>Классы</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>Классы</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Классы</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>Классы</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Классы</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>Классы</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
