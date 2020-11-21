@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Card::Card(string path)
+Card::Card(string path, Vector2f position)
 {
 	player = 0;
 
@@ -18,6 +18,7 @@ Card::Card(string path)
 	Texture& texture = *(new Texture());
 	texture.loadFromFile(path);
 	sprite.setTexture(texture);
+	sprite.setPosition(position);
 }
 
 Sprite& Card::GetSprite()

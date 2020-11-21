@@ -1,17 +1,18 @@
 #pragma once
-#include "Menu.h"
-#include "Form.hpp"
+#include <SFML/Graphics.hpp>
+#include "Field.h"
 
-class MainMenu : public Menu
+using namespace sf;
+
+class Play
 {
-private:
-	form::Button play;
-	form::Button exit;
-	Clock clock;
 	RenderWindow* window;
+	Clock clock;
 	Sprite background;
+
+	Field field;
 public:
-	MainMenu();
+	Play();
 	void Update(float delta);
 	void Draw(float delta);
 	void Run(RenderWindow& window);

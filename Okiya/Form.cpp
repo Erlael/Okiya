@@ -45,10 +45,10 @@ bool form::Button::select(Vector2i mouse_)
 void form::Button::setStyle(String style_)
 {
 	if (style_ == "default") {
-		BOX.setFillColor(Color(133, 133, 133));
+		BOX.setFillColor(Color(133, 84, 163));
 	}
 	else if (style_ == "hover") {
-		BOX.setFillColor(Color(158, 158, 158));
+		BOX.setFillColor(Color(112, 72, 138));
 	}
 	else if (style_ == "disabled") {
 		BOX.setFillColor(Color(200, 200, 200));
@@ -85,7 +85,7 @@ void form::Button::Create(float x_, float y_, float width_, float height_, Strin
 	BOX.setPosition(x_, y_);
 	BOX.setFillColor(buttonColor_);
 	BOX.setOutlineThickness(2);
-	BOX.setOutlineColor(Color(66, 66, 66));
+	BOX.setOutlineColor(Color(255, 236, 173));
 }
 
 Text& form::Button::displayText()

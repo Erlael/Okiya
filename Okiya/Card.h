@@ -10,11 +10,10 @@ class Card
 {
 private:
 	string element1, element2;
-	Vector2f coordinates;
 	int player;
 	Sprite sprite;
 public:
-	Card(string path);
+	Card(string path, Vector2f position);
 	Sprite& GetSprite();
 };
 

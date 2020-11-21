@@ -1,13 +1,16 @@
 #include "Game.h"
 #include "Settings.h"
 #include "Card.h"
+#include <iostream>
+
+Game::State Game::state = Game::State::MainMenu;
 
 Game::Game()
 {
 	Settings& st = Settings::getInstance();
 	st.resolution = Vector2f(960, 540);
 	settings.antialiasingLevel = 2;
-	window.create(VideoMode(st.resolution.x, st.resolution.y), "Okiya", Style::Default, settings);
+	window.create(VideoMode((unsigned int)st.resolution.x, (unsigned int)st.resolution.y), "Okiya", Style::Default, settings);
 	view = window.getDefaultView();
 	view.zoom(1280 / st.resolution.x);
 	view.setCenter(640, 360);
@@ -36,7 +39,19 @@ void Game::Update(float delta)
 			break;
 		}
 	}
-	mainMenu.Run(window);
+
+	switch (Game::state)
+	{
+	case Game::State::MainMenu:
+		mainMenu.Run(window);
+		break;
+	case Game::State::Play:
+		play.Run(window);
+		break;
+	default:
+		break;
+	}
+
 }
 
 void Game::Draw(float delta)

@@ -27,15 +27,14 @@
     <ClCompile Include="MainMenu.cpp">
       <Filter>Классы</Filter>
     </ClCompile>
-    <ClCompile Include="Settings.cpp">
-      <Filter>Классы</Filter>
-    </ClCompile>
     <ClCompile Include="Field.cpp">
       <Filter>Классы</Filter>
     </ClCompile>
     <ClCompile Include="Card.cpp">
       <Filter>Классы</Filter>
     </ClCompile>
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Play.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h">
@@ -62,5 +61,7 @@
     <ClInclude Include="Card.h">
       <Filter>Классы</Filter>
     </ClInclude>
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Play.h" />
   </ItemGroup>
 </Project>
